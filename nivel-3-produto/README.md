@@ -4,10 +4,10 @@ Vitrine de perfumaria e cosméticos que reúne todas as tecnologias do curso em 
 
 | Requisito | Entrega | Onde |
 |---|---|---|
-| Frontend e backend em containers | 4 serviços no Docker Compose | [docker-compose.yml](docker-compose.yml) |
+| Frontend e backend em containers | 5 serviços no Docker Compose | [docker-compose.yml](docker-compose.yml) |
 | Sistema de recomendação no frontend | "Quem gosta deste também gosta" na página do produto e "Combina com o seu carrinho" no carrinho | [recommender.py](backend/app/recommender.py) |
 | Blockchain | Smart contract de certificado de autenticidade por lote, com página pública de verificação | [ProductCertificate.sol](contracts/contracts/ProductCertificate.sol) |
-| Chatbot de suporte | Base de conhecimento, fluxo e webchat do Botpress | [chatbot/](chatbot/README.md) |
+| Chatbot de suporte | Workflow n8n com regras em código, FAQ, Gemini opcional e guardrails, e widget de chat na loja | [chatbot/](chatbot/README.md) |
 | Blog otimizado para SEO | 3 artigos, dados estruturados, sitemap e robots | [frontend/content/blog](frontend/content/blog/) |
 | Campanha e estratégia de SEO | Plano de campanha de 4 semanas e plano de SEO | [marketing/](marketing/) |
 
@@ -15,13 +15,16 @@ Vitrine de perfumaria e cosméticos que reúne todas as tecnologias do curso em 
 
 ```
  navegador ──► frontend (Next.js :3000) ──/api/*──► backend (Flask :5000) ──web3──► chain (Hardhat :8545)
-                                                         │                              ▲
-                                                  catalog.json                          │ publica o contrato
-                                               (25 produtos, TF-IDF)              deployer (roda e sai)
+                  └ widget de chat                       │  │                            ▲
+                                                  catalog.json │                         │ publica o contrato
+                                               (25 produtos, TF-IDF)                deployer (roda e sai)
+                                                           │
+                                                           └──/api/chat──► n8n (webhook) ──► Gemini (opcional)
 ```
 
 - **frontend:** Next.js 16 (App Router), React 19, Tailwind 4. Busca produtos e recomendações no backend. As chamadas do navegador a `/api/*` passam por um *rewrite* do Next, então não há CORS.
 - **backend:** Flask. Serve catálogo, recomendações e a ponte com a blockchain.
+- **n8n:** executa o workflow do chatbot. O backend é o único que fala com ele; o navegador chama `/api/chat`.
 - **chain:** nó local do Hardhat. Não usa dinheiro nem rede pública.
 - **deployer:** publica o contrato e grava endereço e ABI em um volume compartilhado, de onde o backend lê. Roda uma vez e termina.
 
@@ -50,7 +53,7 @@ Podem ir em um arquivo `.env` ao lado do `docker-compose.yml` (que o git ignora)
 | `ADMIN_TOKEN` | Autoriza a emissão de certificados. Vazio desabilita a emissão | vazio |
 | `NEXT_PUBLIC_WHATSAPP_NUMBER` | Número da loja nos links do WhatsApp, só dígitos | `5511999999999` |
 | `SITE_URL` | URL pública, usada no sitemap e no Open Graph | `http://localhost:3000` |
-| `BOTPRESS_INJECT_URL`, `BOTPRESS_CONFIG_URL` | Webchat do Botpress. Veja [chatbot/](chatbot/README.md) | vazio (sem chat) |
+| `GEMINI_API_KEY` | Liga o modelo no chatbot. Sem ela o chat responde só por regras e FAQ. Veja [chatbot/](chatbot/README.md) | vazio |
 
 Para recomeçar do zero (o nó blockchain guarda tudo em memória): `docker compose down -v`.
 
@@ -80,8 +83,11 @@ O endereço do contrato muda a cada subida porque a rede é local e descartável
 # Contrato (8 testes)
 cd contracts && npm ci && npx hardhat test
 
-# Backend: recomendação, API e verificação de certificados (10 testes)
+# Backend: recomendação, API, certificados e ponte do chat (16 testes)
 cd backend && pip install -r requirements.txt pytest && pytest
+
+# Workflow do chatbot, sem dependências (25 testes)
+cd n8n && npm test
 
 # Frontend
 cd frontend && npm ci && npm run lint && npx tsc --noEmit && BACKEND_URL=http://localhost:5000 npm run build
@@ -105,10 +111,12 @@ GET /api/recommendations?slugs=khamrah-100ml&limit=3
 | GET | `/api/recommendations?slugs=a,b&limit=4` | Produtos parecidos com os informados |
 | POST | `/api/certificates` | Emite certificado de lote. Exige `X-Admin-Token` |
 | GET | `/api/certificates/<slug>/<lote>` | Verifica um lote |
+| POST | `/api/chat` | Mensagem para o chatbot (`message` até 500 caracteres e `history` com até 6 turnos) |
 
 ## Limitações
 
 - As fotos são de banco de imagens (Unsplash), como no produto original.
-- O chatbot depende de um bot criado no Botpress Cloud: o repositório traz o conteúdo e o fluxo, mas o bot publicado e a conferência do webchat no site não foram feitos.
+- O chatbot com o **Gemini real** não foi testado, por falta de chave. O caminho do modelo foi testado contra um servidor Gemini simulado, e o restante (regras, FAQ, guardrails) roda no n8n de verdade.
+- O chatbot não tem limite de requisições por usuário.
 - A rede blockchain é local. Não há deploy em testnet pública.
 - O painel administrativo, o checkout com pedidos e a autenticação do produto original não fazem parte desta versão.

@@ -46,3 +46,8 @@ export function buildWhatsAppProductInquiryUrl(product: Product): string {
   const message = `Olá! Tenho interesse em ${product.brand} — ${product.name}. Ainda está disponível?`;
   return `https://wa.me/${STORE_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
+
+export function buildWhatsAppSupportUrl(): string {
+  const message = "Olá! Vim pelo site e gostaria de falar com a vendedora.";
+  return `https://wa.me/${STORE_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}

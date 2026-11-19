@@ -6,13 +6,15 @@ from pathlib import Path
 from flask import Flask, jsonify, request
 
 from .certificates import AlreadyIssued, Chain, ChainUnavailable
+from .chat import MAX_MESSAGE, ChatUnavailable, N8nChat, clean_history
 from .recommender import Recommender
 
 DEFAULT_CATALOG = Path(__file__).resolve().parent.parent / "data" / "catalog.json"
 
 
-def create_app(chain=None, catalog_path=DEFAULT_CATALOG, admin_token=None):
+def create_app(chain=None, catalog_path=DEFAULT_CATALOG, admin_token=None, chat=None):
     app = Flask(__name__)
+    app.config["MAX_CONTENT_LENGTH"] = 20_000
     products = json.loads(Path(catalog_path).read_text(encoding="utf-8"))
     by_slug = {p["slug"]: p for p in products}
     recommender = Recommender(products)
@@ -21,6 +23,26 @@ def create_app(chain=None, catalog_path=DEFAULT_CATALOG, admin_token=None):
         os.environ.get("CHAIN_RPC_URL", "http://chain:8545"),
         os.environ.get("DEPLOYMENT_FILE", "/shared/deployment.json"),
     )
+
+    chat = chat or N8nChat(os.environ.get("N8N_WEBHOOK_URL", "http://n8n:5678/webhook/loja-chat"))
+
+    @app.post("/api/chat")
+    def chat_message():
+        body = request.get_json(silent=True) or {}
+        message = body.get("message")
+        if not isinstance(message, str) or not message.strip() or len(message.strip()) > MAX_MESSAGE:
+            return {"error": f"envie uma mensagem de até {MAX_MESSAGE} caracteres"}, 400
+        try:
+            return chat.ask(message.strip(), clean_history(body.get("history")))
+        except ChatUnavailable:
+            return {
+                "error": "atendimento automático indisponível",
+                "reply": "O atendimento automático está fora do ar. A vendedora atende você pelo WhatsApp.",
+                "handoff": True,
+                "suggestions": [],
+                "products": [],
+                "source": "fallback",
+            }, 503
 
     @app.get("/api/health")
     def health():

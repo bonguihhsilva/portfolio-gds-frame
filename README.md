@@ -4,10 +4,10 @@ Trabalho final do curso, organizado como portfólio em três níveis de complexi
 
 O resultado é uma loja virtual de perfumaria (a **GDS Boutique**) que integra, em um único sistema que sobe com um comando:
 
-- **frontend e backend em Docker** (Next.js, Flask e um nó blockchain local);
+- **frontend e backend em Docker** (Next.js, Flask, n8n e um nó blockchain local);
 - **sistema de recomendação** por conteúdo (TF-IDF e similaridade de cosseno);
 - **smart contract** em Solidity para certificar a autenticidade de cada lote;
-- **chatbot** de suporte no Botpress;
+- **chatbot** de suporte em n8n, com regras, FAQ e Gemini opcional, e os limites do que ele pode dizer garantidos em código;
 - **blog** com SEO técnico e uma **campanha de marketing** documentada.
 
 ![Página de produto com recomendações](docs/img/produto-recomendacoes.png)
@@ -33,6 +33,8 @@ Abra http://localhost:3000. Para ver a blockchain funcionando, siga a seção "T
 
 ![Verificação de autenticidade de um lote na blockchain](docs/img/autenticidade-blockchain.png)
 
+![Chatbot de atendimento respondendo pelo FAQ e encaminhando para a vendedora](docs/img/chatbot-n8n.png)
+
 ## Tecnologias
 
 | Camada | Tecnologia |
@@ -40,7 +42,7 @@ Abra http://localhost:3000. Para ver a blockchain funcionando, siga a seção "T
 | Frontend | Next.js 16, React 19, TypeScript, Tailwind CSS 4 |
 | Backend | Python, Flask, scikit-learn, web3.py |
 | Blockchain | Solidity 0.8, Hardhat, rede local |
-| Chatbot | Botpress (webchat) |
+| Chatbot | n8n (workflow versionado), Google Gemini (opcional) |
 | Infraestrutura | Docker, Docker Compose |
 | SEO | Metadata API do Next, JSON-LD, sitemap, robots |
 
@@ -49,15 +51,19 @@ Abra http://localhost:3000. Para ver a blockchain funcionando, siga a seção "T
 | Item | Resultado |
 |---|---|
 | Testes do contrato (Hardhat) | 8 passando |
-| Testes do backend (pytest) | 10 passando |
+| Testes do backend (pytest) | 16 passando |
+| Testes do workflow do chatbot (`node --test`) | 25 passando |
 | Frontend: lint, tipos e build | passando |
-| `docker compose up` com os 4 serviços | sobe; API, recomendação e ciclo completo do certificado conferidos com `curl` |
+| `docker compose up` com os 5 serviços | sobe; API, recomendação e ciclo completo do certificado conferidos com `curl` |
+| Chatbot no n8n real (2.35.5) | workflow importado e ativado; regras, FAQ e guardrails respondem pelo backend e pelo widget, no desktop e no mobile |
+| Chatbot com o modelo | testado contra um servidor Gemini **simulado** (cota, resposta com dinheiro e slug inventado tratados) |
 | Páginas do site (home, catálogo, produto, blog, autenticidade, sitemap, robots) | respondem 200 |
 | Subida repetida e reinício do nó blockchain | os certificados são preservados na subida repetida, e o contrato é republicado se o nó reiniciar |
 
 ## Limitações conhecidas
 
-- O bot do Botpress precisa ser criado na conta de quem executa. O repositório traz a base de conhecimento, o fluxo e a integração com o site, mas o bot publicado não foi conferido no site.
+- O chatbot com o **Gemini real** não foi testado, por falta de chave de API. Sem chave ele responde só por regras e FAQ.
+- O enunciado sugere o Botpress. Aqui o chatbot é um workflow n8n próprio, pelos motivos em [chatbot/README.md](nivel-3-produto/chatbot/README.md).
 - As fotos dos produtos vêm de um banco de imagens e não correspondem aos frascos reais.
 - A campanha de marketing é um plano e não foi veiculada, então não há métricas.
 - A blockchain roda em rede local, sem testnet pública.
@@ -70,10 +76,11 @@ Abra http://localhost:3000. Para ver a blockchain funcionando, siga a seção "T
 nivel-1-praticas/          exercícios de fundamentos
 nivel-2-area-de-atuacao/   aplicação das tecnologias ao setor
 nivel-3-produto/
-  frontend/                Next.js (loja, recomendação, blog, webchat)
-  backend/                 Flask (catálogo, recomendação, ponte com a blockchain)
+  frontend/                Next.js (loja, recomendação, blog, widget de chat)
+  backend/                 Flask (catálogo, recomendação, ponte com a blockchain e com o chatbot)
   contracts/               Solidity + Hardhat
-  chatbot/                 base de conhecimento e fluxo do Botpress
+  n8n/                     workflow do chatbot (nós de código, build e testes)
+  chatbot/                 base de conhecimento (FAQ), fluxo e documentação do chatbot
   marketing/               campanha e estratégia de SEO
   docker-compose.yml
 docs/img/                  capturas de tela

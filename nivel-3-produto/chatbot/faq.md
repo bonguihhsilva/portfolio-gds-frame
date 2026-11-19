@@ -1,6 +1,6 @@
 # Base de conhecimento: GDS Boutique
 
-Documento para a Knowledge Base do Botpress. Cada pergunta tem uma resposta curta e direta. Quando a informação depende da loja (disponibilidade, entrega, formas de pagamento), a resposta manda para o WhatsApp em vez de inventar um número.
+Fonte única da base de conhecimento do chatbot: o build do workflow n8n lê este arquivo (cada `###` vira uma pergunta). Quando a informação depende da loja (disponibilidade, entrega, formas de pagamento), a resposta manda para o WhatsApp em vez de inventar um número.
 
 ## Sobre a loja
 

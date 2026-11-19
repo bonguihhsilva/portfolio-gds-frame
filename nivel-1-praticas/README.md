@@ -22,7 +22,7 @@ As bases da prática 9 são só os conjuntos de dados. A análise delas não est
 
 | Prática | Onde está |
 |---|---|
-| Chatbot com Botpress | [nivel-3-produto/chatbot](../nivel-3-produto/chatbot/README.md) |
+| Chatbot (workflow n8n com Gemini opcional) | [nivel-3-produto/chatbot](../nivel-3-produto/chatbot/README.md) |
 | Sistema de recomendação (machine learning) | [backend/app/recommender.py](../nivel-3-produto/backend/app/recommender.py) |
 | Blockchain e smart contract | [contracts/](../nivel-3-produto/contracts/contracts/ProductCertificate.sol) |
 | Docker (frontend e backend conteinerizados) | [docker-compose.yml](../nivel-3-produto/docker-compose.yml) |

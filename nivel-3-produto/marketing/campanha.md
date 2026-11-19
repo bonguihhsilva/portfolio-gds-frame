@@ -64,7 +64,7 @@ Sem rastreamento conferido a campanha não sobe.
 | Custo por conversa iniciada | Verba / cliques em "Enviar pelo WhatsApp" | Eficiência do anúncio |
 | Taxa de fechamento | Pedidos fechados / conversas | Qualidade do tráfego |
 | Sessões orgânicas e posição das páginas-alvo | Google Search Console | Resultado do SEO |
-| Uso do chatbot e taxa de encaminhamento | Analytics do Botpress | Se o bot resolve ou só empurra |
+| Uso do chatbot e taxa de encaminhamento | Cliques em "Falar com a vendedora" e perguntas por origem (FAQ, regra ou modelo); ainda não instrumentado | Se o bot resolve ou só empurra |
 | Verificações de autenticidade | Acessos a /autenticidade | Interesse no diferencial |
 
 ## 8. Regras de operação

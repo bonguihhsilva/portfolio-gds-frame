@@ -1,0 +1,132 @@
+{
+  "id": "loja-chat",
+  "name": "Loja: chat de atendimento",
+  "nodes": [
+    {
+      "id": "6c1f0d3a-0001-4a00-9000-000000000001",
+      "name": "webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "6c1f0d3a-00aa-4a00-9000-0000000000aa",
+      "parameters": { "httpMethod": "POST", "path": "loja-chat", "responseMode": "responseNode", "options": {} }
+    },
+    {
+      "id": "6c1f0d3a-0002-4a00-9000-000000000002",
+      "name": "normalizar",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [240, 0],
+      "parameters": { "jsCode": "@file:nodes/normalizar.js" }
+    },
+    {
+      "id": "6c1f0d3a-0003-4a00-9000-000000000003",
+      "name": "rota-direta",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 0],
+      "parameters": { "jsCode": "@file:nodes/rota-direta.js" }
+    },
+    {
+      "id": "6c1f0d3a-0004-4a00-9000-000000000004",
+      "name": "precisa-do-modelo",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [720, 0],
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 2 },
+          "conditions": [
+            {
+              "id": "6c1f0d3a-00c1-4a00-9000-0000000000c1",
+              "leftValue": "={{ $json.route }}",
+              "rightValue": "llm",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "6c1f0d3a-0005-4a00-9000-000000000005",
+      "name": "catalogo",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, -120],
+      "onError": "continueRegularOutput",
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $('normalizar').first().json.cfg.CATALOG_URL }}",
+        "options": { "timeout": 5000 }
+      }
+    },
+    {
+      "id": "6c1f0d3a-0006-4a00-9000-000000000006",
+      "name": "montar-prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, -120],
+      "parameters": { "jsCode": "@file:nodes/montar-prompt.js" }
+    },
+    {
+      "id": "6c1f0d3a-0007-4a00-9000-000000000007",
+      "name": "gemini",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, -120],
+      "onError": "continueRegularOutput",
+      "retryOnFail": true,
+      "maxTries": 2,
+      "waitBetweenTries": 1500,
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('normalizar').first().json.cfg.GEMINI_BASE_URL }}/v1beta/models/{{ $('normalizar').first().json.cfg.GEMINI_MODEL }}:generateContent",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Content-Type", "value": "application/json" },
+            { "name": "x-goog-api-key", "value": "={{ $env.GEMINI_API_KEY }}" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.geminiBody) }}",
+        "options": { "timeout": 20000 }
+      }
+    },
+    {
+      "id": "6c1f0d3a-0008-4a00-9000-000000000008",
+      "name": "guardrails",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1680, -120],
+      "parameters": { "jsCode": "@file:nodes/guardrails.js" }
+    },
+    {
+      "id": "6c1f0d3a-0009-4a00-9000-000000000009",
+      "name": "responder",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1920, 0],
+      "parameters": { "respondWith": "json", "responseBody": "={{ $json }}", "options": {} }
+    }
+  ],
+  "connections": {
+    "webhook": { "main": [[{ "node": "normalizar", "type": "main", "index": 0 }]] },
+    "normalizar": { "main": [[{ "node": "rota-direta", "type": "main", "index": 0 }]] },
+    "rota-direta": { "main": [[{ "node": "precisa-do-modelo", "type": "main", "index": 0 }]] },
+    "precisa-do-modelo": {
+      "main": [
+        [{ "node": "catalogo", "type": "main", "index": 0 }],
+        [{ "node": "responder", "type": "main", "index": 0 }]
+      ]
+    },
+    "catalogo": { "main": [[{ "node": "montar-prompt", "type": "main", "index": 0 }]] },
+    "montar-prompt": { "main": [[{ "node": "gemini", "type": "main", "index": 0 }]] },
+    "gemini": { "main": [[{ "node": "guardrails", "type": "main", "index": 0 }]] },
+    "guardrails": { "main": [[{ "node": "responder", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1", "saveDataSuccessExecution": "none", "saveManualExecutions": false }
+}

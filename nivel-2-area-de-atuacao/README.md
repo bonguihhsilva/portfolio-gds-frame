@@ -11,8 +11,8 @@ Cada prática do curso foi ajustada a esse cenário.
 | | |
 |---|---|
 | Problema | A mesma dúvida chega dezenas de vezes por dia no WhatsApp (horário, como pedir, o que fazer) e interrompe o trabalho |
-| Aplicação | Chatbot que responde às dúvidas frequentes a partir de uma base de conhecimento do negócio e encaminha para uma pessoa quando precisa |
-| Ajuste da prática | O foco não é conversar bem sobre qualquer assunto, e sim **não inventar**: preço, prazo e disponibilidade sempre vão para o humano. O fluxo define quando passar a conversa |
+| Aplicação | Chatbot que responde às dúvidas frequentes a partir de uma base de conhecimento do negócio e encaminha para uma pessoa quando precisa. Feito em n8n, o mesmo padrão dos bots de automação da GDS Frame |
+| Ajuste da prática | O foco não é conversar bem sobre qualquer assunto, e sim **não inventar**: preço, prazo e disponibilidade sempre vão para o humano. Essas regras ficam em **código testado**, e não só no prompt do modelo. O modelo é opcional: sem ele o bot ainda responde por regras e FAQ, o que mantém o custo perto de zero para um negócio pequeno |
 | Aplicado em | [chatbot/](../nivel-3-produto/chatbot/README.md) para a loja de perfumes. A mesma estrutura serve a clínica, petshop ou restaurante trocando a base de conhecimento |
 
 ## Sistema de recomendação: vender mais para quem já está olhando

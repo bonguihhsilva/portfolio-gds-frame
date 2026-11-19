@@ -1,6 +1,6 @@
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
-import { BotpressWebchat } from "@/components/chat/BotpressWebchat";
+import { ChatWidget } from "@/components/chat/ChatWidget";
 import { getAllProducts } from "@/lib/products";
 
 export default async function StorefrontLayout({
@@ -15,7 +15,7 @@ export default async function StorefrontLayout({
       <SiteHeader products={products} />
       <main className="flex-1">{children}</main>
       <SiteFooter />
-      <BotpressWebchat />
+      <ChatWidget />
     </div>
   );
 }

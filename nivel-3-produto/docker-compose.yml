@@ -63,6 +63,12 @@ services:
     depends_on:
       backend:
         condition: service_healthy
+    # Nos primeiros segundos o n8n já escuta, mas ainda responde 404 no webhook. O readiness só vira 200 quando o workflow está ativo.
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:5678/healthz/readiness').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 3s
+      retries: 40
+      start_period: 5s
 
   frontend:
     build:
@@ -75,6 +81,8 @@ services:
       SITE_URL: ${SITE_URL:-http://localhost:3000}
     depends_on:
       backend:
+        condition: service_healthy
+      n8n:
         condition: service_healthy
     ports:
       - "3000:3000"

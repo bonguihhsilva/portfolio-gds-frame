@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  /* Neutrals — warm ivory tinted toward the gold hue, never pure white/black */
+  --color-ivory: oklch(97% 0.012 85);
+  --color-ivory-deep: oklch(93.5% 0.015 85);
+  --color-slate: oklch(55% 0.014 85);
+  --color-slate-light: oklch(87% 0.009 85);
+  --color-graphite: oklch(20% 0.01 85);
+
+  /* Gold — brand accent, rare by design (The Gilded Rarity Rule) */
+  --color-gold: oklch(70% 0.13 83);
+  --color-gold-deep: oklch(50% 0.135 78);
+  --color-gold-light: oklch(90% 0.045 85);
+  --color-gold-on-dark: oklch(80% 0.115 84);
+
+  /* Emerald — second accent: category, line, offer/availability state */
+  --color-emerald: oklch(46% 0.1 155);
+  --color-emerald-deep: oklch(34% 0.09 155);
+  --color-emerald-light: oklch(92% 0.035 155);
+
+  /* Motion — responsive energy only, exponential ease-out */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+}
+
+@theme inline {
+  --color-ivory: var(--color-ivory);
+  --color-ivory-deep: var(--color-ivory-deep);
+  --color-slate: var(--color-slate);
+  --color-slate-light: var(--color-slate-light);
+  --color-graphite: var(--color-graphite);
+
+  --color-gold: var(--color-gold);
+  --color-gold-deep: var(--color-gold-deep);
+  --color-gold-light: var(--color-gold-light);
+  --color-gold-on-dark: var(--color-gold-on-dark);
+
+  --color-emerald: var(--color-emerald);
+  --color-emerald-deep: var(--color-emerald-deep);
+  --color-emerald-light: var(--color-emerald-light);
+
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+* {
+  border-color: var(--color-slate-light);
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-graphite);
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-graphite);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold-deep);
+  outline-offset: 2px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  font-weight: 500;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+.article h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 2.25rem 0 0.75rem;
+}
+
+.article p {
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  margin: 0 0 1.1rem;
+  color: color-mix(in oklch, var(--color-graphite) 88%, transparent);
+}
+
+.article ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0 0 1.1rem;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+}
+
+.article a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.article a:hover {
+  color: var(--color-gold-deep);
+}

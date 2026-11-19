@@ -1,0 +1,32 @@
+body {
+    font-family: Comic Sans MS, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #050453;
+}
+
+fieldset {
+    border: 3px solid #e4e3e3;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #cdce92;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+legend {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 10px;
+    color: #853434;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #070707;
+}

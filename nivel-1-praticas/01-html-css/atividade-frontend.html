@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Frontend</title>
+    <link rel="stylesheet" href="atividade-frontend.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Descreva os acessórios:</legend>
+        <form action="processar.php" method="POST">
+            <label for="acessorioOculos">Oculos:</label>
+            <input type="text" id="acessorioOculos" name="acessorioOculos" required><br><br>
+
+            <label for="acessorioChapeu">Chapéu:</label>
+            <input type="text" id="acessorioChapeu" name="acessorioChapeu" required><br><br>
+
+            <label for="acessorioCinto">Cinto:</label>
+            <input type="text" id="acessorioCinto" name="acessorioCinto" required><br><br>
+
+        </form>
+        
+<form>
+  <label for="acessorios">Escolha os acessórios:</label><br>
+  <select id="acessorios" name="acessorios" multiple size="3" style="width: 200px;">
+    <option value="oculos">Óculos</option>
+    <option value="chapeu">Chapéu</option>
+    <option value="cinto">Cinto</option>
+  </select>
+</form>
+
+    </body>
+</html>

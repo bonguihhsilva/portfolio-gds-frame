@@ -1,0 +1,151 @@
+﻿doacao_id,data_doacao,campanha,estado,tipo_doador,valor_doacao,canal,organizacao,recorrente,horas_voluntariado,destino_recurso
+DOA0001,2025-08-20,Saude e cuidado,SP,Empresa,14.02,Site,Projeto Futuro,Sim,8,Educacao
+DOA0002,2025-09-22,Educacao comunitaria,BA,Pessoa fisica,313.76,Pix,Instituto Esperanca,Nao,2,Alimentos
+DOA0003,2025-04-12,Protecao animal,BA,Empresa,452.66,Site,Projeto Futuro,Sim,12,Acolhimento
+DOA0004,2025-04-06,Saude e cuidado,MG,Pessoa fisica,51.18,Transferencia,Projeto Futuro,Nao,4,Infraestrutura
+DOA0005,2025-02-28,Saude e cuidado,MG,Empresa,65.56,Redes sociais,Projeto Futuro,Sim,8,Educacao
+DOA0006,2025-06-10,Alimentacao para todos,RJ,Empresa,20.53,Redes sociais,Instituto Esperanca,Nao,2,Educacao
+DOA0007,2025-09-07,Meio ambiente,PE,Instituicao,93.76,Pix,Rede Cidadania,Nao,4,Alimentos
+DOA0008,2025-07-03,Alimentacao para todos,PR,Pessoa fisica,292.59,Evento,Projeto Futuro,Nao,2,Infraestrutura
+DOA0009,2025-09-08,Educacao comunitaria,SP,Instituicao,12.78,Redes sociais,Rede Cidadania,Sim,12,Infraestrutura
+DOA0010,2025-10-17,Protecao animal,BA,Instituicao,157.99,Transferencia,Projeto Futuro,Sim,12,Infraestrutura
+DOA0011,2025-10-07,Educacao comunitaria,PR,Pessoa fisica,427.18,Site,Rede Cidadania,Nao,0,Alimentos
+DOA0012,2025-08-13,Alimentacao para todos,DF,Pessoa fisica,469.07,Redes sociais,Projeto Futuro,Nao,0,Acolhimento
+DOA0013,2025-03-13,Educacao comunitaria,DF,Pessoa fisica,82.49,Pix,Rede Cidadania,Nao,0,Acolhimento
+DOA0014,2025-05-17,Meio ambiente,PE,Pessoa fisica,22.2,Transferencia,Projeto Futuro,Sim,8,Educacao
+DOA0015,2025-05-08,Educacao comunitaria,PE,Empresa,84.56,Redes sociais,Projeto Futuro,Nao,8,Infraestrutura
+DOA0016,2025-07-12,Protecao animal,SP,Instituicao,484.67,Transferencia,Rede Cidadania,Nao,0,Acolhimento
+DOA0017,2025-01-02,Alimentacao para todos,PE,Empresa,448.95,Evento,Instituto Esperanca,Nao,12,Educacao
+DOA0018,2025-09-11,Saude e cuidado,MG,Empresa,40.4,Transferencia,Projeto Futuro,Sim,0,Alimentos
+DOA0019,2025-08-24,Alimentacao para todos,SP,Pessoa fisica,49.72,Pix,Projeto Futuro,Nao,0,Atendimento social
+DOA0020,2025-02-17,Saude e cuidado,MG,Pessoa fisica,43.47,Transferencia,Projeto Futuro,Sim,2,Alimentos
+DOA0021,2025-02-18,Alimentacao para todos,RJ,Empresa,17.01,Site,Projeto Futuro,Nao,12,Alimentos
+DOA0022,2025-08-05,Educacao comunitaria,PR,Pessoa fisica,30.61,Transferencia,Rede Cidadania,Sim,2,Educacao
+DOA0023,2025-03-15,Alimentacao para todos,BA,Instituicao,425.36,Pix,Rede Cidadania,Nao,12,Educacao
+DOA0024,2025-02-14,Alimentacao para todos,RJ,Pessoa fisica,63.06,Pix,Instituto Esperanca,Nao,8,Alimentos
+DOA0025,2025-05-08,Meio ambiente,BA,Instituicao,74.91,Transferencia,Instituto Esperanca,Sim,8,Infraestrutura
+DOA0026,2025-06-01,Alimentacao para todos,DF,Pessoa fisica,54.54,Redes sociais,Instituto Esperanca,Nao,0,Educacao
+DOA0027,2025-07-18,Meio ambiente,PR,Empresa,1730.96,Site,Instituto Esperanca,Sim,0,Atendimento social
+DOA0028,2025-04-21,Alimentacao para todos,SP,Empresa,55.59,Evento,Instituto Esperanca,Sim,0,Alimentos
+DOA0029,2025-06-08,Alimentacao para todos,BA,Pessoa fisica,97.69,Site,Rede Cidadania,Nao,8,Educacao
+DOA0030,2025-01-30,Educacao comunitaria,SP,Empresa,406.54,Pix,Instituto Esperanca,Sim,8,Educacao
+DOA0031,2025-01-06,Educacao comunitaria,PR,Empresa,57.07,Pix,Projeto Futuro,Nao,8,Alimentos
+DOA0032,2025-01-16,Saude e cuidado,DF,Empresa,34.48,Site,Rede Cidadania,Nao,4,Atendimento social
+DOA0033,2025-01-29,Protecao animal,DF,Instituicao,179.5,Site,Instituto Esperanca,Sim,0,Alimentos
+DOA0034,2025-05-06,Alimentacao para todos,PR,Empresa,175.89,Redes sociais,Projeto Futuro,Nao,0,Atendimento social
+DOA0035,2025-05-08,Protecao animal,PE,Empresa,34.41,Site,Instituto Esperanca,Sim,12,Acolhimento
+DOA0036,2025-01-24,Protecao animal,SP,Empresa,87.94,Evento,Instituto Esperanca,Nao,0,Atendimento social
+DOA0037,2025-10-16,Saude e cuidado,PE,Instituicao,2932.49,Pix,Projeto Futuro,Sim,0,Alimentos
+DOA0038,2025-07-29,Alimentacao para todos,RJ,Instituicao,2705.4,Site,Projeto Futuro,Nao,12,Atendimento social
+DOA0039,2025-02-23,Educacao comunitaria,BA,Pessoa fisica,47.78,Transferencia,Instituto Esperanca,Sim,0,Acolhimento
+DOA0040,2025-07-31,Saude e cuidado,PR,Instituicao,148.69,Site,Projeto Futuro,Sim,2,Educacao
+DOA0041,2025-05-02,Saude e cuidado,MG,Empresa,93.34,Evento,Rede Cidadania,Sim,0,Educacao
+DOA0042,2025-03-11,Meio ambiente,SP,Pessoa fisica,19.51,Transferencia,Instituto Esperanca,Nao,0,Infraestrutura
+DOA0043,2025-05-16,Alimentacao para todos,SP,Pessoa fisica,82.68,Pix,Rede Cidadania,Sim,0,Educacao
+DOA0044,2025-07-02,Protecao animal,BA,Pessoa fisica,70.95,Evento,Rede Cidadania,Sim,0,Infraestrutura
+DOA0045,2025-02-22,Educacao comunitaria,SP,Pessoa fisica,15.55,Evento,Rede Cidadania,Sim,4,Acolhimento
+DOA0046,2025-05-13,Alimentacao para todos,SP,Pessoa fisica,27.8,Transferencia,Instituto Esperanca,Sim,2,Alimentos
+DOA0047,2025-03-28,Meio ambiente,PR,Instituicao,45.55,Pix,Instituto Esperanca,Nao,0,Infraestrutura
+DOA0048,2025-03-18,Alimentacao para todos,BA,Instituicao,423.99,Evento,Instituto Esperanca,Sim,0,Infraestrutura
+DOA0049,2025-03-12,Protecao animal,RJ,Instituicao,363.38,Site,Rede Cidadania,Nao,2,Acolhimento
+DOA0050,2025-09-06,Saude e cuidado,BA,Instituicao,38.94,Site,Rede Cidadania,Sim,12,Infraestrutura
+DOA0051,2025-09-29,Saude e cuidado,DF,Instituicao,587.02,Transferencia,Projeto Futuro,Sim,12,Educacao
+DOA0052,2025-10-22,Protecao animal,MG,Pessoa fisica,396.67,Redes sociais,Instituto Esperanca,Nao,4,Acolhimento
+DOA0053,2025-03-14,Meio ambiente,RJ,Empresa,58.79,Redes sociais,Instituto Esperanca,Sim,4,Infraestrutura
+DOA0054,2025-01-01,Saude e cuidado,BA,Pessoa fisica,271.04,Transferencia,Instituto Esperanca,Sim,0,Acolhimento
+DOA0055,2025-03-14,Alimentacao para todos,DF,Instituicao,1497.24,Evento,Projeto Futuro,Sim,0,Atendimento social
+DOA0056,2025-06-15,Educacao comunitaria,RJ,Instituicao,95.38,Pix,Projeto Futuro,Nao,0,Acolhimento
+DOA0057,2025-03-31,Protecao animal,MG,Instituicao,2349.47,Redes sociais,Rede Cidadania,Sim,0,Acolhimento
+DOA0058,2025-06-12,Meio ambiente,RJ,Instituicao,568.41,Pix,Rede Cidadania,Nao,0,Alimentos
+DOA0059,2025-06-21,Protecao animal,SP,Empresa,446.89,Site,Instituto Esperanca,Nao,2,Infraestrutura
+DOA0060,2025-03-27,Protecao animal,PR,Empresa,288.3,Redes sociais,Projeto Futuro,Sim,0,Infraestrutura
+DOA0061,2025-02-07,Alimentacao para todos,MG,Pessoa fisica,38.68,Evento,Instituto Esperanca,Sim,4,Alimentos
+DOA0062,2025-06-23,Meio ambiente,BA,Empresa,73.41,Evento,Instituto Esperanca,Sim,0,Atendimento social
+DOA0063,2025-04-16,Educacao comunitaria,PR,Instituicao,562.86,Transferencia,Instituto Esperanca,Sim,0,Infraestrutura
+DOA0064,2025-10-20,Meio ambiente,DF,Empresa,23.82,Redes sociais,Rede Cidadania,Sim,0,Alimentos
+DOA0065,2025-04-16,Educacao comunitaria,PE,Empresa,337.31,Evento,Rede Cidadania,Nao,0,Acolhimento
+DOA0066,2025-07-18,Educacao comunitaria,MG,Empresa,43.25,Pix,Rede Cidadania,Sim,0,Alimentos
+DOA0067,2025-02-13,Saude e cuidado,DF,Instituicao,47.26,Evento,Projeto Futuro,Nao,4,Infraestrutura
+DOA0068,2025-10-21,Educacao comunitaria,PR,Empresa,17.11,Redes sociais,Projeto Futuro,Sim,0,Infraestrutura
+DOA0069,2025-03-30,Educacao comunitaria,RJ,Pessoa fisica,21.36,Pix,Projeto Futuro,Nao,0,Alimentos
+DOA0070,2025-02-14,Protecao animal,BA,Empresa,528.46,Site,Projeto Futuro,Nao,0,Infraestrutura
+DOA0071,2025-03-18,Educacao comunitaria,BA,Instituicao,62.44,Site,Rede Cidadania,Nao,2,Atendimento social
+DOA0072,2025-07-16,Protecao animal,BA,Instituicao,52.57,Evento,Instituto Esperanca,Nao,0,Educacao
+DOA0073,2025-01-26,Protecao animal,MG,Empresa,11.82,Evento,Projeto Futuro,Sim,12,Educacao
+DOA0074,2025-03-10,Saude e cuidado,PE,Empresa,79.66,Site,Instituto Esperanca,Nao,0,Infraestrutura
+DOA0075,2025-09-06,Meio ambiente,DF,Empresa,83.89,Redes sociais,Rede Cidadania,Sim,12,Acolhimento
+DOA0076,2025-10-19,Alimentacao para todos,RJ,Pessoa fisica,88.77,Site,Rede Cidadania,Sim,0,Atendimento social
+DOA0077,2025-08-26,Meio ambiente,PR,Instituicao,93.08,Evento,Instituto Esperanca,Nao,4,Acolhimento
+DOA0078,2025-06-29,Saude e cuidado,RJ,Empresa,77.41,Pix,Projeto Futuro,Sim,12,Educacao
+DOA0079,2025-04-26,Educacao comunitaria,MG,Instituicao,111.01,Site,Rede Cidadania,Sim,8,Educacao
+DOA0080,2025-01-05,Educacao comunitaria,MG,Instituicao,82.46,Evento,Rede Cidadania,Nao,2,Atendimento social
+DOA0081,2025-04-22,Protecao animal,MG,Instituicao,56.86,Transferencia,Projeto Futuro,Nao,0,Alimentos
+DOA0082,2025-09-04,Alimentacao para todos,MG,Empresa,530.88,Transferencia,Instituto Esperanca,Sim,4,Educacao
+DOA0083,2025-01-30,Meio ambiente,PR,Instituicao,38.76,Transferencia,Rede Cidadania,Nao,2,Infraestrutura
+DOA0084,2025-01-19,Meio ambiente,PE,Instituicao,272.24,Evento,Projeto Futuro,Nao,4,Atendimento social
+DOA0085,2025-03-29,Meio ambiente,RJ,Empresa,164.84,Pix,Projeto Futuro,Nao,8,Alimentos
+DOA0086,2025-04-24,Saude e cuidado,RJ,Instituicao,88.43,Redes sociais,Rede Cidadania,Nao,12,Alimentos
+DOA0087,2025-08-29,Alimentacao para todos,DF,Instituicao,572.21,Redes sociais,Instituto Esperanca,Nao,4,Atendimento social
+DOA0088,2025-07-31,Alimentacao para todos,DF,Pessoa fisica,22.36,Evento,Instituto Esperanca,Nao,12,Educacao
+DOA0089,2025-02-11,Protecao animal,MG,Instituicao,98.8,Pix,Instituto Esperanca,Sim,2,Alimentos
+DOA0090,2025-03-08,Meio ambiente,PR,Instituicao,48.65,Redes sociais,Instituto Esperanca,Nao,0,Atendimento social
+DOA0091,2025-09-29,Educacao comunitaria,SP,Instituicao,467.07,Transferencia,Instituto Esperanca,Sim,2,Acolhimento
+DOA0092,2025-06-06,Educacao comunitaria,SP,Pessoa fisica,36.84,Transferencia,Rede Cidadania,Sim,0,Infraestrutura
+DOA0093,2025-07-03,Educacao comunitaria,RJ,Empresa,11.72,Site,Projeto Futuro,Sim,0,Atendimento social
+DOA0094,2025-01-20,Protecao animal,PE,Empresa,79.41,Site,Projeto Futuro,Sim,0,Alimentos
+DOA0095,2025-08-02,Protecao animal,PR,Pessoa fisica,337.72,Site,Rede Cidadania,Nao,8,Alimentos
+DOA0096,2025-09-24,Saude e cuidado,BA,Instituicao,73.07,Redes sociais,Instituto Esperanca,Nao,0,Alimentos
+DOA0097,2025-09-12,Educacao comunitaria,BA,Pessoa fisica,80.02,Evento,Rede Cidadania,Sim,0,Acolhimento
+DOA0098,2025-09-12,Educacao comunitaria,PE,Empresa,102.37,Redes sociais,Projeto Futuro,Nao,0,Alimentos
+DOA0099,2025-09-19,Alimentacao para todos,PE,Instituicao,1155.55,Transferencia,Rede Cidadania,Nao,0,Alimentos
+DOA0100,2025-03-31,Alimentacao para todos,DF,Empresa,42.42,Site,Instituto Esperanca,Sim,8,Educacao
+DOA0101,2025-06-18,Saude e cuidado,PR,Instituicao,34.15,Site,Rede Cidadania,Nao,2,Atendimento social
+DOA0102,2025-07-17,Protecao animal,DF,Empresa,498.66,Site,Instituto Esperanca,Sim,2,Acolhimento
+DOA0103,2025-09-05,Meio ambiente,PE,Empresa,26.31,Pix,Rede Cidadania,Nao,0,Infraestrutura
+DOA0104,2025-08-14,Alimentacao para todos,SP,Empresa,68.95,Redes sociais,Projeto Futuro,Sim,8,Atendimento social
+DOA0105,2025-09-23,Meio ambiente,PE,Instituicao,65.64,Evento,Instituto Esperanca,Sim,0,Educacao
+DOA0106,2025-09-16,Protecao animal,DF,Empresa,88.25,Transferencia,Instituto Esperanca,Sim,4,Infraestrutura
+DOA0107,2025-07-26,Educacao comunitaria,SP,Empresa,49.98,Transferencia,Instituto Esperanca,Nao,8,Alimentos
+DOA0108,2025-02-22,Protecao animal,PR,Pessoa fisica,60.14,Redes sociais,Projeto Futuro,Nao,4,Acolhimento
+DOA0109,2025-04-16,Protecao animal,MG,Empresa,84.28,Redes sociais,Projeto Futuro,Nao,8,Atendimento social
+DOA0110,2025-08-20,Alimentacao para todos,SP,Instituicao,2591.89,Transferencia,Projeto Futuro,Nao,8,Alimentos
+DOA0111,2025-01-24,Educacao comunitaria,PR,Pessoa fisica,83.97,Pix,Instituto Esperanca,Sim,12,Infraestrutura
+DOA0112,2025-04-21,Protecao animal,DF,Pessoa fisica,154.78,Redes sociais,Instituto Esperanca,Nao,2,Acolhimento
+DOA0113,2025-09-16,Educacao comunitaria,PR,Pessoa fisica,125.24,Evento,Projeto Futuro,Sim,8,Acolhimento
+DOA0114,2025-03-30,Educacao comunitaria,SP,Empresa,403.47,Evento,Projeto Futuro,Sim,0,Infraestrutura
+DOA0115,2025-06-25,Saude e cuidado,PR,Pessoa fisica,22.44,Redes sociais,Rede Cidadania,Sim,0,Educacao
+DOA0116,2025-05-29,Saude e cuidado,PE,Pessoa fisica,98.32,Transferencia,Projeto Futuro,Sim,12,Atendimento social
+DOA0117,2025-10-15,Protecao animal,BA,Instituicao,455.35,Redes sociais,Rede Cidadania,Nao,12,Alimentos
+DOA0118,2025-09-25,Alimentacao para todos,SP,Empresa,435.46,Pix,Rede Cidadania,Nao,0,Alimentos
+DOA0119,2025-06-01,Educacao comunitaria,DF,Instituicao,507.2,Redes sociais,Instituto Esperanca,Nao,0,Acolhimento
+DOA0120,2025-05-28,Alimentacao para todos,PR,Empresa,2244.67,Site,Instituto Esperanca,Nao,0,Acolhimento
+DOA0121,2025-08-15,Educacao comunitaria,PE,Instituicao,284.5,Pix,Projeto Futuro,Sim,0,Infraestrutura
+DOA0122,2025-04-01,Alimentacao para todos,RJ,Pessoa fisica,76.16,Transferencia,Instituto Esperanca,Sim,4,Atendimento social
+DOA0123,2025-01-03,Saude e cuidado,PR,Instituicao,94.37,Redes sociais,Projeto Futuro,Nao,2,Acolhimento
+DOA0124,2025-10-09,Saude e cuidado,SP,Instituicao,38.61,Redes sociais,Instituto Esperanca,Nao,4,Acolhimento
+DOA0125,2025-07-26,Alimentacao para todos,MG,Pessoa fisica,89.51,Redes sociais,Projeto Futuro,Nao,4,Alimentos
+DOA0126,2025-02-28,Saude e cuidado,PR,Pessoa fisica,2091.09,Transferencia,Rede Cidadania,Sim,2,Atendimento social
+DOA0127,2025-10-04,Saude e cuidado,SP,Instituicao,83.99,Site,Rede Cidadania,Sim,0,Acolhimento
+DOA0128,2025-02-12,Alimentacao para todos,RJ,Instituicao,57.99,Pix,Projeto Futuro,Nao,12,Alimentos
+DOA0129,2025-04-16,Meio ambiente,DF,Instituicao,470.95,Site,Projeto Futuro,Sim,0,Infraestrutura
+DOA0130,2025-06-19,Alimentacao para todos,SP,Pessoa fisica,14.88,Pix,Rede Cidadania,Nao,2,Infraestrutura
+DOA0131,2025-07-27,Protecao animal,MG,Pessoa fisica,160.03,Site,Projeto Futuro,Sim,8,Alimentos
+DOA0132,2025-07-03,Meio ambiente,SP,Empresa,251.37,Evento,Rede Cidadania,Nao,12,Alimentos
+DOA0133,2025-08-31,Educacao comunitaria,BA,Pessoa fisica,22.27,Pix,Rede Cidadania,Nao,0,Acolhimento
+DOA0134,2025-10-12,Educacao comunitaria,SP,Pessoa fisica,1889.63,Transferencia,Instituto Esperanca,Nao,0,Infraestrutura
+DOA0135,2025-09-20,Educacao comunitaria,RJ,Pessoa fisica,29.87,Redes sociais,Instituto Esperanca,Nao,8,Acolhimento
+DOA0136,2025-02-07,Saude e cuidado,PE,Pessoa fisica,1993.85,Transferencia,Instituto Esperanca,Sim,0,Atendimento social
+DOA0137,2025-02-05,Educacao comunitaria,MG,Empresa,50.56,Redes sociais,Projeto Futuro,Nao,12,Atendimento social
+DOA0138,2025-08-08,Educacao comunitaria,SP,Empresa,32.16,Transferencia,Instituto Esperanca,Nao,2,Infraestrutura
+DOA0139,2025-08-17,Saude e cuidado,DF,Empresa,53.83,Transferencia,Instituto Esperanca,Sim,0,Alimentos
+DOA0140,2025-02-08,Alimentacao para todos,DF,Instituicao,506.51,Pix,Instituto Esperanca,Nao,4,Acolhimento
+DOA0141,2025-08-30,Educacao comunitaria,MG,Empresa,30.1,Evento,Projeto Futuro,Sim,2,Atendimento social
+DOA0142,2025-09-15,Alimentacao para todos,PE,Pessoa fisica,86.32,Redes sociais,Instituto Esperanca,Nao,0,Educacao
+DOA0143,2025-10-17,Meio ambiente,PE,Pessoa fisica,76.23,Evento,Instituto Esperanca,Sim,0,Atendimento social
+DOA0144,2025-04-30,Alimentacao para todos,PE,Pessoa fisica,495.94,Site,Instituto Esperanca,Nao,0,Acolhimento
+DOA0145,2025-05-21,Saude e cuidado,BA,Instituicao,61.31,Site,Projeto Futuro,Nao,2,Educacao
+DOA0146,2025-09-22,Protecao animal,MG,Empresa,53.82,Pix,Rede Cidadania,Sim,0,Alimentos
+DOA0147,2025-09-21,Saude e cuidado,RJ,Pessoa fisica,26.82,Pix,Rede Cidadania,Nao,8,Alimentos
+DOA0148,2025-09-04,Protecao animal,PR,Pessoa fisica,63.17,Pix,Projeto Futuro,Sim,0,Acolhimento
+DOA0149,2025-01-21,Meio ambiente,RJ,Pessoa fisica,24.97,Redes sociais,Projeto Futuro,Sim,8,Atendimento social
+DOA0150,2025-02-13,Educacao comunitaria,PR,Instituicao,533.78,Redes sociais,Instituto Esperanca,Sim,4,Acolhimento

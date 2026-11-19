@@ -1,0 +1,4 @@
+flask>=3.1,<4
+gunicorn>=23
+scikit-learn>=1.5
+web3>=7,<8

@@ -1,0 +1,151 @@
+﻿paciente_id,idade,sexo,cidade,especialidade,data_consulta,tipo_atendimento,valor_consulta,exames_solicitados,dias_espera,retorno_30d,plano_saude
+PAC0001,76,M,Sao Paulo,Oftalmologia,2025-09-08,Urgencia,265.49,2,10,Sim,Convenio B
+PAC0002,28,F,Santos,Pediatria,2025-02-20,Urgencia,247.95,5,29,Nao,Particular
+PAC0003,51,F,Sorocaba,Ortopedia,2025-02-16,Urgencia,181.21,5,13,Sim,Particular
+PAC0004,43,F,Sao Paulo,Cardiologia,2025-10-11,Consulta,342.14,1,9,Nao,Convenio A
+PAC0005,77,F,Campinas,Clinica geral,2025-10-04,Retorno,433.36,0,18,Sim,Convenio A
+PAC0006,2,M,Sao Paulo,Ortopedia,2025-03-31,Retorno,112.53,5,16,Nao,Particular
+PAC0007,9,M,Ribeirao Preto,Pediatria,2025-02-25,Retorno,306.65,4,29,Sim,Convenio B
+PAC0008,59,F,Sorocaba,Oftalmologia,2025-07-25,Retorno,385.02,3,2,Nao,Particular
+PAC0009,11,F,Sao Paulo,Ortopedia,2025-03-06,Retorno,358.46,4,39,Nao,Convenio C
+PAC0010,77,M,Ribeirao Preto,Dermatologia,2025-08-09,Consulta,431.03,0,19,Sim,Convenio C
+PAC0011,58,M,Sorocaba,Cardiologia,2025-07-24,Retorno,403.73,2,27,Nao,Convenio B
+PAC0012,86,F,Sorocaba,Ortopedia,2025-02-04,Consulta,447.66,0,24,Nao,Particular
+PAC0013,48,F,Ribeirao Preto,Cardiologia,2025-10-15,Urgencia,231.75,0,36,Nao,Convenio B
+PAC0014,86,M,Ribeirao Preto,Pediatria,2025-06-09,Retorno,134.55,4,4,Sim,Convenio A
+PAC0015,85,F,Santos,Pediatria,2025-10-12,Retorno,139.4,2,15,Sim,Convenio C
+PAC0016,72,F,Ribeirao Preto,Dermatologia,2025-05-17,Consulta,167.58,5,40,Nao,Convenio B
+PAC0017,45,F,Ribeirao Preto,Clinica geral,2025-07-25,Consulta,151.01,5,12,Sim,Particular
+PAC0018,68,M,Sorocaba,Cardiologia,2025-06-24,Consulta,249.12,5,25,Nao,Particular
+PAC0019,7,F,Sao Paulo,Cardiologia,2025-05-20,Retorno,374.63,3,11,Nao,Convenio C
+PAC0020,35,F,Santos,Cardiologia,2025-08-09,Consulta,211.8,5,33,Nao,Convenio B
+PAC0021,6,F,Sao Paulo,Cardiologia,2025-04-15,Retorno,496.49,1,26,Nao,Convenio B
+PAC0022,42,M,Sorocaba,Clinica geral,2025-03-31,Consulta,253.49,5,1,Sim,Convenio B
+PAC0023,10,M,Sao Paulo,Pediatria,2025-08-24,Consulta,460.71,4,3,Nao,Convenio C
+PAC0024,82,F,Sorocaba,Pediatria,2025-01-11,Retorno,163.91,4,19,Nao,Convenio B
+PAC0025,12,F,Sorocaba,Pediatria,2025-07-25,Urgencia,123.82,2,7,Nao,Convenio A
+PAC0026,43,F,Ribeirao Preto,Cardiologia,2025-09-19,Consulta,479.55,2,5,Nao,Convenio A
+PAC0027,31,M,Campinas,Clinica geral,2025-03-30,Urgencia,155.73,5,10,Sim,Convenio A
+PAC0028,81,M,Ribeirao Preto,Pediatria,2025-06-15,Urgencia,225.94,3,30,Sim,Convenio C
+PAC0029,57,M,Ribeirao Preto,Oftalmologia,2025-01-29,Retorno,308.15,2,20,Nao,Convenio C
+PAC0030,5,M,Sao Paulo,Clinica geral,2025-02-16,Urgencia,345.45,3,24,Nao,Particular
+PAC0031,58,F,Santos,Dermatologia,2025-09-01,Urgencia,154.87,0,42,Nao,Particular
+PAC0032,44,F,Sao Paulo,Oftalmologia,2025-05-07,Urgencia,278.24,3,6,Sim,Convenio B
+PAC0033,48,M,Santos,Ortopedia,2025-01-27,Urgencia,368.34,0,25,Nao,Particular
+PAC0034,72,M,Santos,Oftalmologia,2025-03-18,Retorno,125.05,5,25,Sim,Convenio B
+PAC0035,40,M,Campinas,Oftalmologia,2025-02-13,Retorno,330.34,5,45,Nao,Convenio A
+PAC0036,86,F,Sorocaba,Oftalmologia,2025-09-18,Retorno,97.84,2,44,Sim,Convenio A
+PAC0037,44,F,Campinas,Pediatria,2025-03-21,Consulta,217.19,0,13,Sim,Convenio B
+PAC0038,80,M,Campinas,Cardiologia,2025-03-25,Consulta,447.48,4,39,Sim,Convenio C
+PAC0039,6,F,Sorocaba,Pediatria,2025-05-26,Urgencia,427.03,1,24,Sim,Convenio B
+PAC0040,61,M,Sorocaba,Cardiologia,2025-05-25,Retorno,306.25,3,24,Sim,Convenio A
+PAC0041,78,F,Sorocaba,Cardiologia,2025-07-10,Urgencia,491.75,5,17,Sim,Convenio B
+PAC0042,11,M,Ribeirao Preto,Cardiologia,2025-03-17,Retorno,129.44,1,18,Nao,Convenio B
+PAC0043,4,M,Ribeirao Preto,Pediatria,2025-07-11,Consulta,256.05,0,4,Nao,Convenio A
+PAC0044,4,M,Campinas,Ortopedia,2025-03-12,Consulta,213.36,3,7,Sim,Convenio C
+PAC0045,58,F,Sao Paulo,Dermatologia,2025-05-12,Consulta,449.03,4,1,Nao,Particular
+PAC0046,37,F,Sao Paulo,Cardiologia,2025-05-03,Retorno,364.75,4,20,Nao,Particular
+PAC0047,15,F,Ribeirao Preto,Pediatria,2025-10-22,Consulta,398.97,2,39,Nao,Particular
+PAC0048,79,M,Campinas,Ortopedia,2025-02-13,Urgencia,509.1,0,16,Sim,Convenio C
+PAC0049,61,M,Santos,Clinica geral,2025-05-10,Urgencia,96.98,0,41,Nao,Convenio A
+PAC0050,85,M,Campinas,Oftalmologia,2025-01-23,Retorno,324.79,5,7,Sim,Convenio C
+PAC0051,62,F,Sao Paulo,Oftalmologia,2025-08-23,Consulta,216.18,0,12,Sim,Particular
+PAC0052,41,M,Ribeirao Preto,Ortopedia,2025-08-31,Retorno,105.75,5,33,Sim,Convenio B
+PAC0053,46,M,Santos,Clinica geral,2025-03-05,Retorno,277.89,3,42,Nao,Convenio C
+PAC0054,44,M,Santos,Cardiologia,2025-09-23,Retorno,434.49,5,32,Nao,Particular
+PAC0055,56,M,Santos,Dermatologia,2025-02-22,Consulta,231.01,2,12,Nao,Convenio C
+PAC0056,78,F,Sorocaba,Oftalmologia,2025-06-29,Retorno,108.21,2,28,Nao,Convenio B
+PAC0057,82,M,Santos,Clinica geral,2025-09-20,Urgencia,382.15,0,5,Sim,Convenio C
+PAC0058,5,F,Santos,Cardiologia,2025-07-05,Retorno,498.27,0,5,Sim,Convenio C
+PAC0059,48,F,Ribeirao Preto,Ortopedia,2025-03-12,Urgencia,247.79,2,29,Nao,Convenio A
+PAC0060,15,M,Ribeirao Preto,Clinica geral,2025-07-18,Urgencia,140.64,2,12,Nao,Convenio A
+PAC0061,79,M,Campinas,Ortopedia,2025-03-04,Consulta,456.72,3,45,Sim,Convenio C
+PAC0062,12,M,Sao Paulo,Oftalmologia,2025-10-09,Urgencia,214.86,2,21,Sim,Convenio A
+PAC0063,47,F,Campinas,Dermatologia,2025-03-13,Consulta,429.86,0,15,Nao,Convenio B
+PAC0064,60,F,Sao Paulo,Dermatologia,2025-06-08,Retorno,519.83,5,9,Nao,Convenio C
+PAC0065,53,F,Santos,Dermatologia,2025-02-07,Retorno,290.31,4,5,Nao,Convenio A
+PAC0066,71,F,Campinas,Oftalmologia,2025-08-10,Urgencia,481.61,0,38,Sim,Convenio A
+PAC0067,39,M,Campinas,Cardiologia,2025-06-27,Urgencia,474.82,0,11,Nao,Convenio A
+PAC0068,82,F,Santos,Dermatologia,2025-10-01,Consulta,306.11,1,18,Sim,Convenio A
+PAC0069,85,M,Ribeirao Preto,Dermatologia,2025-01-22,Consulta,124.93,5,39,Nao,Convenio A
+PAC0070,74,F,Sorocaba,Pediatria,2025-10-07,Retorno,366.02,2,40,Nao,Convenio A
+PAC0071,88,M,Sao Paulo,Pediatria,2025-01-31,Consulta,279.03,3,20,Nao,Convenio A
+PAC0072,44,M,Santos,Dermatologia,2025-06-26,Retorno,146.23,2,10,Sim,Convenio B
+PAC0073,31,M,Sorocaba,Pediatria,2025-05-07,Consulta,131.63,2,8,Nao,Convenio C
+PAC0074,32,M,Campinas,Cardiologia,2025-03-23,Retorno,518.27,3,21,Nao,Convenio B
+PAC0075,64,M,Ribeirao Preto,Clinica geral,2025-08-23,Consulta,182.51,2,6,Sim,Particular
+PAC0076,37,M,Santos,Pediatria,2025-10-02,Consulta,454.28,3,39,Sim,Convenio B
+PAC0077,47,F,Sorocaba,Pediatria,2025-01-27,Urgencia,331.58,2,24,Nao,Particular
+PAC0078,50,M,Ribeirao Preto,Dermatologia,2025-03-02,Consulta,509.29,3,29,Nao,Convenio B
+PAC0079,72,F,Ribeirao Preto,Ortopedia,2025-09-18,Retorno,305.03,0,10,Sim,Convenio A
+PAC0080,43,M,Campinas,Pediatria,2025-09-21,Consulta,231.03,4,34,Nao,Convenio A
+PAC0081,51,M,Ribeirao Preto,Dermatologia,2025-09-18,Urgencia,300.63,4,20,Nao,Convenio C
+PAC0082,3,F,Sorocaba,Ortopedia,2025-10-26,Retorno,432.6,5,22,Sim,Convenio C
+PAC0083,34,F,Sao Paulo,Oftalmologia,2025-10-26,Retorno,163.32,5,38,Nao,Convenio A
+PAC0084,88,F,Campinas,Cardiologia,2025-01-10,Retorno,224.89,1,3,Nao,Convenio A
+PAC0085,53,M,Sao Paulo,Dermatologia,2025-03-12,Urgencia,179.16,2,40,Nao,Convenio C
+PAC0086,41,M,Ribeirao Preto,Cardiologia,2025-07-01,Urgencia,421.96,5,30,Nao,Convenio C
+PAC0087,25,M,Campinas,Cardiologia,2025-06-02,Retorno,393.11,5,18,Nao,Convenio B
+PAC0088,62,M,Santos,Ortopedia,2025-03-04,Urgencia,380.95,3,36,Nao,Convenio B
+PAC0089,19,M,Sao Paulo,Ortopedia,2025-06-27,Retorno,372.07,5,3,Nao,Convenio A
+PAC0090,26,M,Campinas,Dermatologia,2025-02-25,Urgencia,408.58,1,18,Sim,Particular
+PAC0091,86,F,Sao Paulo,Dermatologia,2025-02-21,Retorno,232.03,3,15,Sim,Convenio A
+PAC0092,1,M,Sorocaba,Dermatologia,2025-09-02,Urgencia,175.77,2,11,Nao,Convenio B
+PAC0093,83,F,Ribeirao Preto,Clinica geral,2025-01-20,Consulta,269.69,1,6,Sim,Convenio C
+PAC0094,64,F,Sao Paulo,Cardiologia,2025-06-02,Urgencia,349.2,2,19,Nao,Convenio C
+PAC0095,83,M,Campinas,Dermatologia,2025-09-16,Retorno,207.32,0,34,Nao,Convenio A
+PAC0096,59,F,Sao Paulo,Oftalmologia,2025-06-22,Retorno,334.15,1,17,Sim,Convenio C
+PAC0097,55,F,Sorocaba,Dermatologia,2025-02-18,Consulta,512.12,3,21,Nao,Convenio A
+PAC0098,1,F,Sorocaba,Ortopedia,2025-05-17,Retorno,219.84,5,25,Sim,Convenio B
+PAC0099,84,F,Sao Paulo,Ortopedia,2025-03-02,Retorno,221.93,3,45,Nao,Particular
+PAC0100,82,F,Campinas,Ortopedia,2025-03-10,Retorno,155.87,5,24,Nao,Convenio C
+PAC0101,71,F,Campinas,Pediatria,2025-02-11,Urgencia,282.1,5,35,Nao,Particular
+PAC0102,73,F,Ribeirao Preto,Clinica geral,2025-10-02,Consulta,160.75,4,4,Nao,Particular
+PAC0103,88,M,Sao Paulo,Cardiologia,2025-09-19,Retorno,437.74,3,38,Sim,Convenio C
+PAC0104,59,M,Santos,Dermatologia,2025-01-12,Retorno,199.42,0,4,Sim,Particular
+PAC0105,6,F,Ribeirao Preto,Pediatria,2025-01-31,Consulta,514.04,3,23,Sim,Convenio B
+PAC0106,53,M,Santos,Cardiologia,2025-07-15,Retorno,463.94,3,9,Nao,Particular
+PAC0107,88,F,Santos,Oftalmologia,2025-03-02,Consulta,516.92,3,35,Sim,Convenio A
+PAC0108,1,M,Ribeirao Preto,Clinica geral,2025-08-06,Urgencia,253.09,1,20,Sim,Convenio C
+PAC0109,45,F,Sao Paulo,Cardiologia,2025-01-17,Urgencia,270.27,0,18,Sim,Convenio A
+PAC0110,9,F,Sorocaba,Clinica geral,2025-01-25,Consulta,408.43,3,39,Nao,Convenio A
+PAC0111,70,F,Ribeirao Preto,Cardiologia,2025-05-29,Consulta,440.79,5,4,Nao,Convenio B
+PAC0112,31,F,Sorocaba,Ortopedia,2025-06-03,Retorno,116.21,4,10,Sim,Convenio C
+PAC0113,72,M,Sorocaba,Pediatria,2025-09-26,Retorno,389.41,3,4,Sim,Convenio B
+PAC0114,49,M,Campinas,Cardiologia,2025-04-26,Retorno,458.74,1,35,Nao,Particular
+PAC0115,72,F,Sorocaba,Pediatria,2025-05-05,Retorno,177.43,5,27,Sim,Convenio C
+PAC0116,48,F,Sao Paulo,Clinica geral,2025-05-18,Retorno,379.68,4,35,Sim,Particular
+PAC0117,25,F,Sorocaba,Dermatologia,2025-04-17,Retorno,220.37,0,43,Sim,Convenio A
+PAC0118,16,F,Ribeirao Preto,Oftalmologia,2025-04-15,Retorno,483.5,4,31,Nao,Convenio B
+PAC0119,49,M,Santos,Pediatria,2025-05-14,Retorno,310.51,3,35,Nao,Particular
+PAC0120,61,M,Santos,Ortopedia,2025-07-31,Consulta,331.89,1,14,Sim,Particular
+PAC0121,34,M,Santos,Dermatologia,2025-03-20,Consulta,231.84,3,38,Sim,Convenio C
+PAC0122,71,M,Santos,Oftalmologia,2025-09-08,Urgencia,365.93,3,44,Nao,Convenio A
+PAC0123,46,M,Campinas,Cardiologia,2025-10-05,Urgencia,501.61,4,9,Sim,Particular
+PAC0124,86,M,Campinas,Clinica geral,2025-04-29,Consulta,394.08,0,1,Sim,Convenio C
+PAC0125,48,M,Sorocaba,Clinica geral,2025-01-09,Consulta,318.85,3,40,Sim,Particular
+PAC0126,68,M,Sao Paulo,Oftalmologia,2025-09-15,Urgencia,379.83,1,18,Sim,Particular
+PAC0127,68,F,Ribeirao Preto,Cardiologia,2025-09-27,Retorno,440.54,2,16,Nao,Particular
+PAC0128,48,F,Campinas,Pediatria,2025-06-03,Urgencia,446.07,0,30,Sim,Particular
+PAC0129,52,M,Sao Paulo,Pediatria,2025-01-05,Urgencia,163.69,3,25,Nao,Convenio B
+PAC0130,73,F,Campinas,Clinica geral,2025-04-19,Urgencia,471.65,3,34,Nao,Particular
+PAC0131,10,F,Campinas,Oftalmologia,2025-06-11,Consulta,503.43,4,18,Sim,Convenio C
+PAC0132,10,F,Ribeirao Preto,Ortopedia,2025-07-19,Urgencia,475.51,2,11,Nao,Convenio A
+PAC0133,89,M,Sao Paulo,Oftalmologia,2025-02-20,Retorno,189.82,0,6,Nao,Convenio C
+PAC0134,42,M,Sorocaba,Clinica geral,2025-09-09,Consulta,243.0,3,41,Nao,Convenio A
+PAC0135,88,M,Sao Paulo,Dermatologia,2025-06-01,Consulta,396.64,0,43,Nao,Convenio A
+PAC0136,49,F,Sorocaba,Oftalmologia,2025-06-12,Retorno,135.82,0,41,Nao,Convenio C
+PAC0137,47,F,Sao Paulo,Ortopedia,2025-04-06,Retorno,283.0,4,7,Nao,Particular
+PAC0138,4,F,Ribeirao Preto,Clinica geral,2025-06-16,Retorno,95.31,3,23,Nao,Particular
+PAC0139,72,F,Sorocaba,Cardiologia,2025-03-28,Consulta,205.64,2,37,Nao,Convenio A
+PAC0140,9,M,Sorocaba,Cardiologia,2025-06-03,Retorno,426.55,2,28,Nao,Convenio A
+PAC0141,81,F,Sorocaba,Pediatria,2025-02-24,Consulta,221.0,3,39,Nao,Convenio C
+PAC0142,43,M,Ribeirao Preto,Pediatria,2025-03-11,Retorno,227.89,5,22,Sim,Convenio C
+PAC0143,41,M,Santos,Cardiologia,2025-09-09,Urgencia,426.25,2,26,Nao,Convenio B
+PAC0144,51,F,Ribeirao Preto,Ortopedia,2025-10-07,Consulta,383.14,4,8,Sim,Convenio C
+PAC0145,27,F,Sorocaba,Pediatria,2025-09-13,Consulta,362.33,1,19,Nao,Convenio A
+PAC0146,55,M,Ribeirao Preto,Pediatria,2025-09-03,Urgencia,262.35,4,5,Nao,Particular
+PAC0147,47,F,Sao Paulo,Oftalmologia,2025-05-08,Urgencia,375.82,1,35,Sim,Convenio C
+PAC0148,43,F,Sao Paulo,Pediatria,2025-05-13,Consulta,309.59,4,7,Sim,Convenio C
+PAC0149,48,F,Santos,Pediatria,2025-01-13,Retorno,134.96,3,30,Sim,Particular
+PAC0150,19,M,Sorocaba,Ortopedia,2025-04-16,Urgencia,297.66,3,20,Sim,Convenio C

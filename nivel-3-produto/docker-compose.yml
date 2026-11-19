@@ -1,0 +1,61 @@
+services:
+  chain:
+    build: ./contracts
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://localhost:8545',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:'eth_chainId',params:[]})}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+      interval: 3s
+      retries: 20
+
+  deployer:
+    build: ./contracts
+    command: ["npx", "hardhat", "run", "scripts/deploy.js", "--network", "docker"]
+    environment:
+      DEPLOYMENT_FILE: /shared/deployment.json
+    volumes:
+      - shared:/shared
+    depends_on:
+      chain:
+        condition: service_healthy
+    restart: "no"
+
+  backend:
+    build: ./backend
+    environment:
+      CHAIN_RPC_URL: http://chain:8545
+      DEPLOYMENT_FILE: /shared/deployment.json
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-}
+    volumes:
+      - shared:/shared:ro
+    depends_on:
+      deployer:
+        condition: service_completed_successfully
+    ports:
+      - "5050:5000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:5000/api/health').status == 200 else 1)"]
+      interval: 5s
+      retries: 10
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        BACKEND_URL: http://backend:5000
+        NEXT_PUBLIC_WHATSAPP_NUMBER: ${NEXT_PUBLIC_WHATSAPP_NUMBER:-5511999999999}
+    environment:
+      BACKEND_URL: http://backend:5000
+      SITE_URL: ${SITE_URL:-http://localhost:3000}
+      BOTPRESS_INJECT_URL: ${BOTPRESS_INJECT_URL:-}
+      BOTPRESS_CONFIG_URL: ${BOTPRESS_CONFIG_URL:-}
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+
+volumes:
+  shared:

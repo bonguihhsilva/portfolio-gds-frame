@@ -1,0 +1,151 @@
+﻿pedido_id,data_pedido,regiao,modal,distancia_km,peso_kg,valor_frete,prazo_dias,dias_entrega,status_entrega,custo_operacional,satisfacao_1a5
+PED0001,2025-03-13,Sudeste,Ferroviario,476,22.2,42.08,1,1,No prazo,26.63,4
+PED0002,2025-04-22,Sul,Rodoviario,376,502.3,95.2,1,1,No prazo,62.34,4
+PED0003,2025-05-23,Sudeste,Maritimo,128,477.5,81.06,1,1,No prazo,53.66,5
+PED0004,2025-06-22,Sudeste,Aereo,1751,289.9,131.58,1,1,No prazo,82.47,5
+PED0005,2025-01-23,Centro-Oeste,Ferroviario,1576,83.1,98.89,2,2,No prazo,61.2,4
+PED0006,2025-05-31,Norte,Maritimo,531,827.2,141.16,2,2,No prazo,92.51,5
+PED0007,2025-05-29,Sudeste,Rodoviario,807,599.2,126.22,2,3,Atrasado,81.73,4
+PED0008,2025-07-06,Sul,Maritimo,433,323.7,76.33,1,1,No prazo,49.59,5
+PED0009,2025-02-06,Norte,Ferroviario,1475,178.9,105.84,2,3,Atrasado,66.14,4
+PED0010,2025-10-13,Sul,Maritimo,1022,139.7,80.75,3,3,No prazo,50.77,5
+PED0011,2025-07-25,Nordeste,Rodoviario,249,195.5,52.66,1,2,Atrasado,34.36,4
+PED0012,2025-09-13,Centro-Oeste,Ferroviario,884,776.3,150.94,1,1,No prazo,97.97,6
+PED0013,2025-10-03,Nordeste,Aereo,605,225.9,72.33,1,2,Atrasado,46.41,3
+PED0014,2025-03-12,Norte,Maritimo,1774,763.3,189.43,5,5,No prazo,120.96,6
+PED0015,2025-03-23,Centro-Oeste,Rodoviario,392,642.7,112.76,1,1,No prazo,74.0,4
+PED0016,2025-10-11,Sudeste,Maritimo,280,327.7,69.92,1,1,No prazo,45.78,5
+PED0017,2025-08-11,Sul,Ferroviario,1112,653.5,146.46,2,2,No prazo,94.3,6
+PED0018,2025-04-02,Norte,Ferroviario,33,810.8,116.78,1,5,Atrasado,77.76,3
+PED0019,2025-03-24,Norte,Aereo,1242,715.6,159.76,1,1,No prazo,102.78,4
+PED0020,2025-07-05,Nordeste,Maritimo,22,509.5,80.13,1,1,No prazo,53.35,5
+PED0021,2025-09-06,Sudeste,Rodoviario,257,205.5,54.22,1,1,No prazo,35.38,4
+PED0022,2025-03-26,Nordeste,Maritimo,535,110.0,55.28,2,4,Atrasado,35.25,2
+PED0023,2025-07-24,Nordeste,Aereo,1753,819.7,195.25,1,2,Atrasado,124.91,5
+PED0024,2025-06-23,Sudeste,Aereo,2139,384.3,160.37,2,2,No prazo,100.5,4
+PED0025,2025-01-31,Sul,Rodoviario,962,500.6,121.36,2,2,No prazo,78.02,5
+PED0026,2025-05-23,Centro-Oeste,Rodoviario,148,730.8,112.36,1,1,No prazo,74.46,5
+PED0027,2025-08-31,Centro-Oeste,Maritimo,561,615.1,117.06,2,2,No prazo,76.36,5
+PED0028,2025-07-30,Centro-Oeste,Maritimo,406,83.3,46.27,1,1,No prazo,29.63,5
+PED0029,2025-02-25,Sul,Ferroviario,423,52.5,43.33,1,2,Atrasado,27.62,4
+PED0030,2025-05-23,Centro-Oeste,Aereo,799,456.3,108.71,1,1,No prazo,70.08,5
+PED0031,2025-10-04,Sudeste,Rodoviario,328,377.2,78.02,1,1,No prazo,51.03,5
+PED0032,2025-07-25,Sudeste,Maritimo,988,142.2,79.52,3,3,No prazo,50.05,5
+PED0033,2025-08-21,Nordeste,Maritimo,1572,2.8,89.08,4,4,No prazo,54.67,6
+PED0034,2025-01-30,Norte,Ferroviario,2013,132.4,124.47,3,3,No prazo,76.94,4
+PED0035,2025-09-02,Norte,Rodoviario,269,636.0,106.42,1,1,No prazo,70.14,4
+PED0036,2025-02-05,Norte,Rodoviario,664,49.3,53.8,1,3,Atrasado,33.87,3
+PED0037,2025-01-21,Norte,Aereo,983,343.8,103.49,1,1,No prazo,66.05,5
+PED0038,2025-04-15,Nordeste,Ferroviario,1737,559.1,163.26,3,5,Atrasado,103.63,3
+PED0039,2025-02-07,Sudeste,Ferroviario,1107,337.0,108.25,2,2,No prazo,68.85,6
+PED0040,2025-03-09,Nordeste,Aereo,429,63.2,44.89,1,1,No prazo,28.64,5
+PED0041,2025-10-06,Nordeste,Aereo,1020,314.7,101.66,1,1,No prazo,64.72,4
+PED0042,2025-02-23,Sul,Ferroviario,2186,7.6,117.28,3,5,Atrasado,71.63,3
+PED0043,2025-04-18,Nordeste,Aereo,492,756.4,130.91,1,1,No prazo,85.8,5
+PED0044,2025-01-27,Sudeste,Ferroviario,1101,430.1,119.16,2,4,Atrasado,76.14,4
+PED0045,2025-05-15,Sul,Ferroviario,1153,38.4,74.49,2,3,Atrasado,46.2,5
+PED0046,2025-03-18,Norte,Rodoviario,1771,477.2,154.96,4,4,No prazo,97.99,5
+PED0047,2025-01-22,Nordeste,Aereo,1532,495.6,146.41,1,1,No prazo,93.01,5
+PED0048,2025-02-22,Nordeste,Aereo,183,764.2,117.94,1,2,Atrasado,78.08,3
+PED0049,2025-05-02,Sul,Aereo,1684,827.8,193.12,1,3,Atrasado,123.69,3
+PED0050,2025-07-30,Sul,Ferroviario,1708,22.0,97.5,3,4,Atrasado,59.88,4
+PED0051,2025-01-20,Centro-Oeste,Rodoviario,672,669.5,128.58,1,1,No prazo,83.7,5
+PED0052,2025-04-27,Sul,Maritimo,837,694.3,138.98,2,2,No prazo,90.14,5
+PED0053,2025-05-23,Nordeste,Ferroviario,811,339.3,95.21,1,3,Atrasado,61.04,2
+PED0054,2025-03-01,Nordeste,Ferroviario,1657,577.9,161.91,3,5,Atrasado,102.97,3
+PED0055,2025-06-10,Centro-Oeste,Maritimo,1107,33.5,71.83,3,3,No prazo,44.57,4
+PED0056,2025-08-12,Sudeste,Aereo,2114,99.2,125.03,2,2,No prazo,77.01,4
+PED0057,2025-06-19,Norte,Rodoviario,827,310.2,92.44,2,4,Atrasado,59.14,3
+PED0058,2025-07-29,Nordeste,Ferroviario,530,612.1,115.3,1,1,No prazo,75.28,6
+PED0059,2025-07-14,Sul,Aereo,1231,471.7,130.0,1,1,No prazo,82.97,4
+PED0060,2025-04-18,Centro-Oeste,Rodoviario,1252,345.8,115.84,3,3,No prazo,73.47,4
+PED0061,2025-09-19,Centro-Oeste,Maritimo,1339,395.8,125.75,4,5,Atrasado,79.82,4
+PED0062,2025-05-01,Nordeste,Ferroviario,367,241.9,63.54,1,1,No prazo,41.26,5
+PED0063,2025-09-01,Norte,Rodoviario,835,126.1,70.71,2,2,No prazo,44.63,5
+PED0064,2025-07-16,Centro-Oeste,Aereo,1885,352.9,145.17,1,2,Atrasado,91.13,5
+PED0065,2025-02-24,Centro-Oeste,Rodoviario,1019,126.3,79.01,2,4,Atrasado,49.62,3
+PED0066,2025-05-08,Sudeste,Maritimo,740,683.7,133.34,2,2,No prazo,86.68,6
+PED0067,2025-08-15,Norte,Ferroviario,566,681.4,125.24,1,3,Atrasado,81.79,2
+PED0068,2025-09-01,Centro-Oeste,Maritimo,1767,706.2,182.26,5,7,Atrasado,116.2,3
+PED0069,2025-09-24,Centro-Oeste,Ferroviario,1032,714.0,150.12,2,3,Atrasado,96.98,4
+PED0070,2025-06-21,Nordeste,Ferroviario,1144,374.5,114.42,2,2,No prazo,72.85,4
+PED0071,2025-03-20,Sul,Aereo,350,118.5,47.97,1,1,No prazo,30.93,5
+PED0072,2025-04-16,Centro-Oeste,Maritimo,1719,347.1,137.01,5,5,No prazo,86.18,6
+PED0073,2025-06-30,Nordeste,Maritimo,100,728.4,109.91,1,1,No prazo,72.97,6
+PED0074,2025-05-20,Centro-Oeste,Aereo,1736,457.9,151.07,1,1,No prazo,95.5,6
+PED0075,2025-08-28,Sul,Maritimo,138,331.1,63.94,1,2,Atrasado,42.21,3
+PED0076,2025-08-08,Sul,Rodoviario,130,771.0,116.37,1,1,No prazo,77.19,6
+PED0077,2025-08-21,Nordeste,Maritimo,764,43.7,57.62,2,2,No prazo,36.12,5
+PED0078,2025-02-11,Centro-Oeste,Maritimo,1572,237.2,117.2,4,4,No prazo,73.42,5
+PED0079,2025-02-05,Sudeste,Ferroviario,233,849.9,130.47,1,1,No prazo,86.28,5
+PED0080,2025-05-03,Sul,Rodoviario,1032,170.3,84.88,2,2,No prazo,53.49,6
+PED0081,2025-05-12,Nordeste,Aereo,488,479.8,97.54,1,1,No prazo,63.56,5
+PED0082,2025-02-25,Norte,Aereo,489,661.3,119.36,1,5,Atrasado,78.11,3
+PED0083,2025-04-12,Sudeste,Maritimo,1297,489.9,135.15,4,4,No prazo,86.21,4
+PED0084,2025-03-03,Norte,Ferroviario,1014,87.5,74.13,2,4,Atrasado,46.38,3
+PED0085,2025-06-24,Sudeste,Ferroviario,1442,453.3,137.29,2,2,No prazo,87.2,6
+PED0086,2025-08-24,Sul,Ferroviario,2027,90.6,120.09,3,3,No prazo,73.98,6
+PED0087,2025-10-03,Centro-Oeste,Ferroviario,741,624.0,126.22,1,1,No prazo,81.93,6
+PED0088,2025-05-06,Sudeste,Ferroviario,1804,702.0,183.42,3,3,No prazo,116.87,5
+PED0089,2025-07-14,Nordeste,Maritimo,1866,208.0,126.93,5,5,No prazo,79.02,5
+PED0090,2025-07-01,Nordeste,Aereo,2044,723.5,196.8,2,2,No prazo,125.07,5
+PED0091,2025-09-22,Sul,Ferroviario,1165,748.4,160.23,2,2,No prazo,103.33,5
+PED0092,2025-05-04,Centro-Oeste,Maritimo,1008,612.3,136.84,3,3,No prazo,88.2,6
+PED0093,2025-07-27,Sul,Rodoviario,1855,674.2,182.38,4,4,No prazo,116.02,5
+PED0094,2025-10-09,Nordeste,Ferroviario,1531,402.8,135.23,2,2,No prazo,85.56,5
+PED0095,2025-04-09,Nordeste,Ferroviario,1878,231.0,130.23,3,3,No prazo,81.19,5
+PED0096,2025-09-26,Norte,Maritimo,778,163.6,72.64,2,2,No prazo,46.09,5
+PED0097,2025-04-02,Nordeste,Ferroviario,431,707.9,122.34,1,1,No prazo,80.27,5
+PED0098,2025-03-06,Centro-Oeste,Rodoviario,538,233.9,70.28,1,1,No prazo,45.24,5
+PED0099,2025-06-24,Sul,Maritimo,70,488.4,79.76,1,1,No prazo,52.96,5
+PED0100,2025-02-03,Centro-Oeste,Maritimo,1054,800.0,161.43,3,3,No prazo,104.46,6
+PED0101,2025-10-16,Nordeste,Rodoviario,323,490.9,91.44,1,1,No prazo,59.99,5
+PED0102,2025-04-26,Norte,Maritimo,1036,101.6,76.81,3,3,No prazo,48.1,6
+PED0103,2025-08-08,Nordeste,Ferroviario,1865,772.3,194.6,3,5,Atrasado,124.14,2
+PED0104,2025-04-17,Sul,Rodoviario,266,518.6,92.2,1,3,Atrasado,60.67,3
+PED0105,2025-03-22,Sudeste,Aereo,352,134.3,49.96,1,1,No prazo,32.25,6
+PED0106,2025-04-29,Nordeste,Maritimo,1865,586.3,172.28,5,5,No prazo,109.26,5
+PED0107,2025-04-12,Centro-Oeste,Aereo,1879,61.4,109.92,1,3,Atrasado,67.64,3
+PED0108,2025-02-06,Sudeste,Ferroviario,940,550.8,126.4,1,2,Atrasado,81.44,4
+PED0109,2025-08-28,Nordeste,Ferroviario,1279,506.2,136.3,2,2,No prazo,87.03,6
+PED0110,2025-01-21,Centro-Oeste,Maritimo,1135,425.9,120.18,3,3,No prazo,76.72,5
+PED0111,2025-10-22,Norte,Aereo,1045,23.0,67.79,1,5,Atrasado,42.06,3
+PED0112,2025-08-15,Nordeste,Aereo,1123,490.2,127.36,1,1,No prazo,81.54,5
+PED0113,2025-08-29,Nordeste,Maritimo,1805,539.9,164.01,5,9,Atrasado,103.93,4
+PED0114,2025-06-18,Centro-Oeste,Rodoviario,1385,273.6,113.16,3,5,Atrasado,71.28,4
+PED0115,2025-10-09,Sudeste,Maritimo,1200,563.5,139.62,3,4,Atrasado,89.48,5
+PED0116,2025-07-26,Norte,Ferroviario,380,268.0,67.26,1,1,No prazo,43.7,5
+PED0117,2025-09-13,Centro-Oeste,Aereo,1912,351.8,146.26,1,1,No prazo,91.77,5
+PED0118,2025-08-13,Centro-Oeste,Aereo,853,227.7,83.71,1,3,Atrasado,53.25,3
+PED0119,2025-06-09,Norte,Aereo,138,827.2,123.47,1,2,Atrasado,81.9,4
+PED0120,2025-03-02,Sul,Rodoviario,1691,80.1,103.71,4,4,No prazo,64.06,6
+PED0121,2025-09-05,Centro-Oeste,Ferroviario,1215,433.0,124.63,2,2,No prazo,79.44,5
+PED0122,2025-09-18,Sul,Maritimo,1890,469.0,159.33,5,5,No prazo,100.55,5
+PED0123,2025-09-17,Nordeste,Maritimo,1151,657.0,148.63,3,3,No prazo,95.64,5
+PED0124,2025-08-17,Norte,Maritimo,1178,617.4,145.1,3,5,Atrasado,93.2,4
+PED0125,2025-06-14,Sul,Maritimo,1433,283.2,116.47,4,4,No prazo,73.35,5
+PED0126,2025-08-31,Centro-Oeste,Maritimo,1588,199.3,113.38,5,5,No prazo,70.82,6
+PED0127,2025-06-19,Sudeste,Rodoviario,643,421.5,97.52,1,1,No prazo,63.08,6
+PED0128,2025-03-15,Centro-Oeste,Maritimo,428,447.5,90.96,1,1,No prazo,59.36,5
+PED0129,2025-07-23,Sudeste,Ferroviario,326,399.6,80.62,1,1,No prazo,52.77,5
+PED0130,2025-01-19,Norte,Maritimo,1576,811.1,186.25,5,7,Atrasado,119.44,3
+PED0131,2025-02-16,Centro-Oeste,Ferroviario,981,536.9,126.57,2,6,Atrasado,81.44,3
+PED0132,2025-01-24,Nordeste,Ferroviario,431,377.7,82.72,1,3,Atrasado,53.85,3
+PED0133,2025-09-29,Centro-Oeste,Maritimo,1221,305.3,109.58,3,3,No prazo,69.39,4
+PED0134,2025-07-15,Norte,Rodoviario,757,145.3,69.5,2,2,No prazo,44.06,5
+PED0135,2025-05-11,Centro-Oeste,Aereo,2058,776.0,203.73,2,2,No prazo,129.65,5
+PED0136,2025-10-07,Sul,Maritimo,58,764.2,112.31,1,3,Atrasado,74.7,3
+PED0137,2025-08-06,Nordeste,Ferroviario,1829,803.5,196.72,3,3,No prazo,125.66,6
+PED0138,2025-02-24,Sul,Maritimo,1257,170.1,94.98,4,6,Atrasado,59.55,4
+PED0139,2025-07-22,Nordeste,Ferroviario,1490,489.0,143.73,2,2,No prazo,91.35,5
+PED0140,2025-05-27,Sul,Maritimo,220,774.1,120.79,1,2,Atrasado,79.87,3
+PED0141,2025-03-12,Sudeste,Aereo,1463,186.9,106.26,1,1,No prazo,66.45,5
+PED0142,2025-03-09,Sudeste,Rodoviario,1285,670.5,156.28,3,3,No prazo,100.34,5
+PED0143,2025-10-04,Nordeste,Aereo,1358,635.6,155.38,1,1,No prazo,99.51,4
+PED0144,2025-09-04,Nordeste,Aereo,2075,776.6,204.57,2,2,No prazo,130.15,5
+PED0145,2025-04-26,Centro-Oeste,Rodoviario,491,398.6,87.93,1,1,No prazo,57.14,4
+PED0146,2025-10-02,Sudeste,Maritimo,1518,77.7,95.63,4,4,No prazo,59.2,6
+PED0147,2025-07-10,Sudeste,Ferroviario,1529,572.2,155.47,2,2,No prazo,99.06,5
+PED0148,2025-04-24,Sudeste,Ferroviario,1951,22.2,108.46,3,5,Atrasado,66.45,4
+PED0149,2025-01-20,Nordeste,Rodoviario,1257,552.2,140.83,3,3,No prazo,90.12,6
+PED0150,2025-07-09,Norte,Aereo,495,83.5,50.3,1,1,No prazo,32.05,6

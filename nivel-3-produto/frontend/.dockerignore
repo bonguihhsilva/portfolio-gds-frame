@@ -1,0 +1,8 @@
+node_modules
+.next
+artifacts
+cache
+__pycache__
+.pytest_cache
+tests
+.env*
